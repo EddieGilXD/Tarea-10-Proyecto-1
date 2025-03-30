@@ -62,9 +62,9 @@ correctamente la puntuación del ganador después de
 cada ronda.*/
 
 function updateScore(winner) {
-  if (winner == true) {
-    humanScore = humanScore + 1;
-  } else {
+  if (winner === "human") {
+    humanScore = humanScore + 1;    
+  } else if (winner === "computer") {
     computerScore = computerScore + 1;
   }
 }
